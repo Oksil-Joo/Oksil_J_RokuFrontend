@@ -1,0 +1,303 @@
+
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Hi+Melody&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
+.hidden {
+    display: none;
+}
+img, embed, object, video {
+    max-width: 100%;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Hi Melody', cursive;
+    background-color: #eaeaea;
+    font-size: 20px;
+}
+    
+
+a {
+    text-decoration: none;
+    transition: all .1s liner;
+}
+#top_Main {
+    padding: 0px;
+    margin: 0px auto;
+    height: 142px;
+    background-image: url('~@/assets/images/topBg.jpg');
+}
+.loginCon {
+    max-width: 1100px;
+    margin: 0px auto;
+    padding: 0px;
+}
+.logoTop {
+    position: absolute;
+    top: 30px;
+    left: 20px;
+}
+
+.gotoTop{
+    position: absolute;
+    top:60px;
+    width: 140px;
+
+}
+.flashback {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0px;
+    margin: 0px;
+}
+
+.mainImages {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+
+/* main */
+
+.loginCon {
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Hi Melody', cursive;
+    font-size: 24px;
+    text-align: center;
+}
+
+
+.loginCon p {
+    margin-top: 20px;
+margin-bottom: 10px;
+}
+
+
+.mainImages {
+    justify-content: center;
+}
+
+.mainImages img {
+    padding: 10px;
+}
+/* rightMenu */
+.rightMenu {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
+
+/* footer */
+.footerTitle h3 {
+    text-align: center;
+    font-family: 'Concert One', cursive;
+    color: #4C2185;
+    font-size: 30px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+
+}
+.streamLove{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 70px;
+}
+
+
+.bannerImg {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.bannerImg Img {
+    padding: 10px;
+}
+
+#socialNav ul {
+display: flex;
+flex-direction: row;
+justify-content: center;
+}
+
+#socialNav li {
+    padding: 10px;
+}
+
+.bottomBg {
+    margin-top: 20px;
+    height: 20px;
+    background-color: #4C2185;
+}
+
+.bottomFooter {
+    margin: 0 auto;
+    max-width: 1100px;
+    padding: 20px 0px 0px 30px;
+}
+
+.bottomFooter p {
+    margin-top: 10px;
+}
+
+.mediaImages {
+    max-width: 1080px;
+    height: 419px;
+}
+
+.webhidden {
+    display:inline;
+}
+ .mobilehidden {
+     display: none;
+}
+
+#socialNav {
+    margin-top: 100px;
+    border-top: 1px solid black;
+}
+
+/* login page */
+
+.loginChaImages {
+    max-width: 1080px;
+    height: 419px;
+}
+.loginCon h3{
+    text-align: center;
+    font-family: 'Concert One', cursive;
+    color: white;
+    font-size: 30px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+
+}
+
+.loginIconsBox {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0px;
+    margin: 0px;
+}
+
+
+/* login page */
+.moviesCircle {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    opacity: 70%;
+    margin: 0 auto;
+}
+
+.moviesCircle h3{
+    text-align: center;
+    font-family: 'Concert One', cursive;
+    color: #4C2185;
+    font-size: 50px;
+    margin-top: 0px;
+    margin-bottom: 50px;
+    padding-top: 50px;
+}
+
+/* parents page*/
+.parentsBgImages {
+    max-width: 1080px;
+    height: 400px;
+}
+.top4{
+   margin-top: 80px;
+}
+
+.MovieTitle {
+    text-align: left;
+    font-family: 'Concert One', cursive;
+    color: #4C2185;
+    font-size: 30px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.logOutBtn {
+    background-color: #4C2185;
+    border: none;
+    font-family: 'Concert One', cursive;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 40px 0px 10px 0px;
+    cursor: pointer;
+}
+.logOutBtn:hover {
+    background-color: #F0007F;
+}
+/* rightMenu */
+.rightMenu {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+.rightMenu img {
+    width: 50px;
+    height: 54px;
+}
+
+@media only screen and (max-width: 600px) {
+ .logoTop img {
+width: 90px;
+ }
+
+ .gotoTop {
+     width: 140px;
+     top: 80px;
+ }
+
+ #top_Main {
+    height: 186px;
+}
+
+.webhidden {
+
+display:none;
+}
+.mobilehidden {
+    display: inline;
+}
+.loginCon h3{
+    margin-top: 10px;
+
+}
+
+.parentsBgImages {
+    max-width: 1200px;
+    height: 450px;
+}
+
+.rightMenu img {
+    width: 60px;
+    height: 64px;
+}
+
+.logOutBtn {
+    padding: 10px 20px;
+    font-size: 24px;
+    border-radius: 40px 0px 10px 0px;
+}
+
+}
