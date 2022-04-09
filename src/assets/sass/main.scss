@@ -48,8 +48,8 @@ a {
 
 .gotoTop{
     position: absolute;
-    top:60px;
-    width: 140px;
+    top: 100px;
+    width: 250px;
 
 }
 .flashback {
@@ -79,7 +79,7 @@ a {
 
 
 .loginCon p {
-    margin-top: 20px;
+    margin-top: 300px;
 margin-bottom: 10px;
 }
 
@@ -178,10 +178,24 @@ justify-content: center;
 .loginCon h3{
     text-align: center;
     font-family: 'Concert One', cursive;
-    color: white;
+    color:#4C2185;
     font-size: 30px;
-    margin-top: 50px;
+    margin-top: 300px;
     margin-bottom: 30px;
+
+}
+.FlashBackCon h3{
+    text-align: center;
+    font-family: 'Concert One', cursive;
+    color:#4C2185;
+    font-size: 30px;
+    margin-top: 300px;
+    margin-bottom: 30px;
+
+}
+.FlashBackCon {
+max-width: 1080px;
+margin: 0 auto;
 
 }
 
@@ -264,12 +278,12 @@ width: 90px;
  }
 
  .gotoTop {
-     width: 140px;
-     top: 80px;
+     width: 220px;
+     top: 130px;
  }
 
  #top_Main {
-    height: 186px;
+    height: 156px;
 }
 
 .webhidden {
