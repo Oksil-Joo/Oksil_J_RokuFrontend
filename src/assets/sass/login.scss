@@ -4,17 +4,23 @@
 
 .signup { margin-right: 0.7em; }
 
- input {
+.log-in input {
      border: 2px solid #4C2185;
      border-radius: 10px;
      color: #4C2185;
-     width: 250px;
+     width: 300px;
      height: 50px;
     font-family: 'Hi Melody', cursive;
      font-size: 24px;
      margin-bottom: 10px;
     padding-left: 20px;
     margin-right: 10px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    }
+
+    .log-in {
+        flex-direction: column;
     }
 
 
@@ -26,9 +32,9 @@
     font-family: 'Hi Melody', cursive;
     font-size: 40px;
     font-weight: bold;
-    width: 70px;
-    height: 70px;
-    margin: 10px 0px 30px 0px;
+    width: 120px;
+    height: 120px;
+    margin: 10px 10px 30px 0px;
     cursor: pointer;
 }
 

@@ -18,7 +18,27 @@
     </header>
     <router-view :key="$route.path" :loggedin="authenticated" :role="role" @setauth="setAuthenticated"></router-view>
 </template>
+<script>
+export default {
+  name: "TheMainApp",
+
+  data() {
+    return {
+      authenticated: false,
+      role: 0
+    }
+  },
+
+  methods: {
+    setAuthenticated(status) {
+      debugger;
+      this.authenticated = status.status;
+      this.role = status.role;
+    }
+  }
+}
+</script>
 
 <style lang="scss">
-@import "@/assets/sass/main.scss";
+  @import "@/assets/sass/main.scss";
 </style>

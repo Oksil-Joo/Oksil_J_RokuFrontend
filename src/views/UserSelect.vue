@@ -1,5 +1,5 @@
 <template>
-<section class="LoginCon">
+<section class="loginCon">
         <h3 class="users-headline text-center">Who's Watching?</h3>
 
         <section class="users-container">
