@@ -117,7 +117,6 @@ export default {
       let formData = { username: this.username, password: this.password };
 
       //pass the form data to our login API
-      let url = this.url;
 
       fetch(url, {
         method: 'POST',
@@ -152,7 +151,7 @@ export default {
                 break;
 
               default:
-                this.$router.push({ name: 'UserSeclect'});
+                this.goToUsers(0, this);
           }
           // this.$router.push({ name: 'UserSelect' })
           })

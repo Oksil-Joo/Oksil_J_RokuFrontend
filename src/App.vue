@@ -7,16 +7,16 @@
         <div class="flashback">
             <img class="mediaImages" src="@/assets/images/flashbackBg.png" alt="flashBackBg">
             <img class="gotoTop" src="@/assets/images/moile_flash.svg" alt="flashBack">
-<nav class="float-right">
+<nav class="rightMenu">
       <ul v-if="authenticated">            
-        <li><i class="fas fa-user-circle"></i></li>
-        <li v-if="role === 1"><i class="fas fa-cog"></i></li>
-        <li><i class="fas fa-power-off"></i></li>					
+        <li><img src="@/assets/images/parents.svg" alt="parents"></li>
+        <li @click="switchUsers"><img src="@/assets/images/kids.svg" alt="kids"></li>
+        <li @click="LogOut"><button class="logOutBtn">Log Out</button></li>					
       </ul>
       </nav>
         </div>
     </header>
-    <router-view :key="$route.path" :loggedin="authenticated" :role="role" @setauth="setAuthenticated"></router-view>
+    <router-view @setauth="setAuthenticated"></router-view>
 </template>
 <script>
 export default {
@@ -24,16 +24,34 @@ export default {
 
   data() {
     return {
-      authenticated: false,
-      role: 0
+      authenticated: false
     }
   },
 
   methods: {
     setAuthenticated(status) {
-      debugger;
-      this.authenticated = status.status;
-      this.role = status.role;
+
+      this.authenticated = status;
+    },
+
+  created(){
+    if (window.localStorage.getItem('CurrentUser')) {
+      this.$router.push({
+        name: 'FlashBack',
+        params: JSON.parse(localStorage.getItem('currentUser'))
+      });
+      this.setAuthenticated(true);
+    }
+  },
+    switchUsers() {
+      this.$router.push({ name: 'UserSelect'});
+    },
+    logOut() {
+      if (window.localStorage.getItem('CurrentUser')) {
+        localStorage.removeItem('currentUser');
+      }
+      this.setAuthenticated(false);
+      this.$router.push({ name: 'HomeView'});
     }
   }
 }
