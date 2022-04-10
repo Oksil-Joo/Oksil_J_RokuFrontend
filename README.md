@@ -15,7 +15,7 @@ The primary typeface of typography is Concert One, which is a font similar to th
 - [Dev document](https://docs.google.com/document/d/1dldCZPVgjI7pqrYsycNrXO8zZg4jXAPpTUGutPunyFE/edit?usp=sharing)
 
 ### Installation
-1. [sass-loader] (https://www.npmjs.com/package/sass-loader)
+1. [sass-loader](https://www.npmjs.com/package/sass-loader)
 2. [vue.js](https://cli.vuejs.org/guide/installation.html)
 
 ### Prerequisites
